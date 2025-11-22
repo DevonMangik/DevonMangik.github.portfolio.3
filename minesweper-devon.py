@@ -357,7 +357,7 @@ def check_win():
 def play_game():
     create_board()
 
-    global game_over, SCORE, high_score
+    global game_over, SCORE, high_score, m
 
 
     while not game_over:
@@ -433,6 +433,7 @@ def play_game():
 #starts game
 if __name__ == "__main__":
     play_game()
+
 
 
 
