@@ -293,9 +293,9 @@ def reveal_cell(row, col):
         user_board[row][col] = MINE
         display_board()  #shows full board
 
-        type_print('you hit a mine\n', 0.01)
-        type_print('...\n', 0.23)
-        type_print("\n\nGAME OVER   \n\n\n\n\n     :( \n\n\n", 0.18)
+        type_print('you hit a mine\n', 0.0167)
+        type_print('...\n', 0.2367)
+        type_print("\n\nGAME OVER   \n\n\n\n\n     :( \n\n\n", 0.1867)
         print(f'you had a score of {SCORE}')
 
         #updates high score if necessary
@@ -371,7 +371,7 @@ def play_game():
             
             #shows current score if user types 'score'
             if len(move) == 1 and move[0] == 'score':
-                print(f'your score is {SCORE} with the current high score only being {high_score}')
+                print(f'your score is {SCORE} with the current high score only being {high_score}\n\n')
                 continue
 
             #invalid input handling
@@ -433,7 +433,6 @@ def play_game():
 #starts game
 if __name__ == "__main__":
     play_game()
-
 
 
 
